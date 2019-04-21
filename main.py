@@ -1,13 +1,14 @@
 import sys
 
 from parser import Parser
+from DFA import DFA
 
 # regex = '(0|1(01*0)*1)*'
 # regex = '(01*1)*1'
-regex = "(a|b)*abb"
+# regex = "(a|b)*abb"
 # regex = "(a|b)*"
 # regex = "(a*|b*)*"
-#regex = '((000)|(001)|(010)|(011)|(100)|(101)|(110)|(111))*'
+# regex = '((000)|(001)|(010)|(011)|(100)|(101)|(110)|(111))*'
 
 def showAccepts(regex, testStr):
     sigma = set(regex) - set('()|*')
